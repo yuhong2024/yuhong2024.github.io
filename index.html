@@ -1,7 +1,289 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>王玉宏 | Yuhong Wang</title>
+    <link rel="stylesheet" href="css/style.css">
+    <script src="js/main.js" defer></script>
+</head>
 <body>
-<h1>Hello World</h1>
-<p>I'm hosted with GitHub Pages.</p>
+    <header>
+        <div class="container">
+            <div class="logo">
+                <h1 id="name-title">Yuhong Wang</h1>
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="#about" class="nav-link" data-en="About" data-zh="关于我">About</a></li>
+                    <li><a href="#education" class="nav-link" data-en="Education" data-zh="教育经历">Education</a></li>
+                    <li><a href="#research" class="nav-link" data-en="Research" data-zh="科研经历">Research</a></li>
+                    <li><a href="#competitions" class="nav-link" data-en="Competitions" data-zh="竞赛经历">Competitions</a></li>
+                    <li><a href="#publications" class="nav-link" data-en="Publications" data-zh="成果情况">Publications</a></li>
+                    <li><a href="#skills" class="nav-link" data-en="Skills" data-zh="知识与技能">Skills</a></li>
+                    <li><a href="#contact" class="nav-link" data-en="Contact" data-zh="联系方式">Contact</a></li>
+                </ul>
+            </nav>
+            <div class="language-switch">
+                <button id="en-btn" class="active">EN</button>
+                <button id="zh-btn">中文</button>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <section id="about" class="container section">
+            <h2 class="section-title" data-en="About Me" data-zh="关于我">About Me</h2>
+            <div class="about-content">
+                <div class="about-text">
+                    <div class="about-header">
+                        <h1 class="about-name" data-en="Yuhong Wang" data-zh="王玉宏">Yuhong Wang</h1>
+                        <p class="about-role" data-en="Undergraduate Student | Bioinformatics & AI Researcher" data-zh="本科在读 | 生物信息学与人工智能研究者">Undergraduate Student | Bioinformatics & AI Researcher</p>
+                    </div>
+                    <p id="about-paragraph" data-en="Hello! I am an undergraduate student passionate about Bioinformatics and Artificial Intelligence. I am currently studying at Southwest University in the Elite Agricultural Talent Program (Shennong Class) with a focus on Bioinformatics, while also pursuing a dual degree in Information Security with an AI direction." data-zh="你好！我是一名对生物信息学和人工智能充满热情的本科生。我目前就读于西南大学创新创业学院卓越农科人才拔尖试验班（神农班），专注于生物信息学方向，同时辅修电子信息工程学院信息安全专业（人工智能方向）双学位。">Hello! I am an undergraduate student passionate about Bioinformatics and Artificial Intelligence. I am currently studying at Southwest University in the Elite Agricultural Talent Program (Shennong Class) with a focus on Bioinformatics, while also pursuing a dual degree in Information Security with an AI direction.</p>
+                </div>
+                <div class="about-image">
+                    <img src="img0.jpg" alt="Yuhong Wang" class="profile-photo">
+                </div>
+            </div>
+        </section>
+
+        <section id="education" class="container section">
+            <h2 class="section-title" data-en="Education" data-zh="教育经历">Education</h2>
+            <div class="education-item">
+                <h3 data-en="Southwest University, College of Innovation and Entrepreneurship (Hong College)" data-zh="西南大学创新创业学院（含弘学院）">Southwest University, College of Innovation and Entrepreneurship (Hong College)</h3>
+                <p class="degree" data-en="Elite Agricultural Talent Program (Shennong Class), Bioinformatics" data-zh="卓越农科人才拔尖试验班 神农班（生物信息学方向）">Elite Agricultural Talent Program (Shennong Class), Bioinformatics</p>
+                <p class="year" data-en="2022.09 - 2026.06" data-zh="2022.09 - 2026.06">2022.09 - 2026.06</p>
+            </div>
+            <div class="education-item">
+                <h3 data-en="Southwest University, College of Electronic and Information Engineering" data-zh="西南大学电子信息工程学院">Southwest University, College of Electronic and Information Engineering</h3>
+                <p class="degree" data-en="Dual Degree in Information Security (AI Direction)" data-zh="信息安全专业（人工智能方向）双学位">Dual Degree in Information Security (AI Direction)</p>
+                <p class="year" data-en="2023.09 - 2026.06" data-zh="2023.09 - 2026.06">2023.09 - 2026.06</p>
+            </div>
+            <div class="education-item">
+                <h3 data-en="University of Tokyo & Kyoto University" data-zh="东京大学 & 京都大学">University of Tokyo & Kyoto University</h3>
+                <p class="degree" data-en="Visiting Student, Artificial Intelligence" data-zh="访问学生，人工智能方向">Visiting Student, Artificial Intelligence</p>
+                <p class="year" data-en="2025.01-2025.02" data-zh="2025.01-2025.02">2025.01 (Planned)</p>
+            </div>
+        </section>
+
+        <section id="research" class="container section">
+            <h2 class="section-title" data-en="Research Experience" data-zh="科研经历">Research Experience</h2>
+            
+            <div class="research-item">
+                <h3 data-en="National Undergraduate Innovation and Entrepreneurship Training Program (Project Leader)" data-zh="国家级大学生创新创业训练计划项目（主持）">National Undergraduate Innovation and Entrepreneurship Training Program (Project Leader)</h3>
+                <p class="period" data-en="2024.04 - 2025.02" data-zh="2024.04 - 2025.02">2024.04 - 2025.02</p>
+                <p class="advisor" data-en="Advisor: Prof. Kun Lu (Academic Mentor)" data-zh="指导老师：卢坤（学业导师）">Advisor: Prof. Kun Lu (Academic Mentor)</p>
+                <p class="description" data-en="Built the Brassica gene expression database platform. Responsible for frontend development." data-zh="构建芸苔属基因表达数据库平台。负责前端开发工作。">Built the Brassica gene expression database platform. Responsible for frontend development.</p>
+            </div>
+            
+            <div class="research-item">
+                <h3 data-en="National Undergraduate Innovation and Entrepreneurship Training Program (Key Researcher)" data-zh="国家级创新创业训练计划项目（主研）">National Undergraduate Innovation and Entrepreneurship Training Program (Key Researcher)</h3>
+                <p class="period" data-en="2024.04 - 2025.02" data-zh="2024.04 - 2025.02">2024.04 - 2025.02</p>
+                <p class="advisor" data-en="Advisor: Prof. Daoliang Li (Changjiang Scholar), National Digital Fishery Innovation Center" data-zh="指导老师：李道亮（长江学者），国家数字渔业创新中心">Advisor: Prof. Daoliang Li (Changjiang Scholar), National Digital Fishery Innovation Center</p>
+                <p class="description" data-en="AI decision-making technology for intelligent generation of precise feeding strategies. Responsible for system platform construction." data-zh="智能生成精准投饵策略的AI决策技术。负责系统平台构建。">AI decision-making technology for intelligent generation of precise feeding strategies. Responsible for system platform construction.</p>
+                <p class="achievements" data-en="Achievements: Authorized software copyright (Second author)" data-zh="所获成果：授权软著一项（二作）">Achievements: Authorized software copyright (Second author)</p>
+            </div>
+            
+            <div class="research-item">
+                <h3 data-en="Web-based Bioinformatics Analysis Platform" data-zh="基于Web的生物信息分析平台">Web-based Bioinformatics Analysis Platform</h3>
+                <p class="period" data-en="2025.01 - 2025.07 (Planned)" data-zh="2025.01 - 2025.07（计划）">2025.01 - 2025.07 (Planned)</p>
+                <p class="description" data-en="Responsible for web server development and bioinformatics analysis." data-zh="负责Web服务器开发和生物信息学分析。">Responsible for web server development and bioinformatics analysis.</p>
+            </div>
+            
+            <div class="research-item">
+                <h3 data-en="Graduation Project: AI-based Smart Agriculture System" data-zh="毕业设计：基于人工智能的智慧农业系统">Graduation Project: AI-based Smart Agriculture System</h3>
+                <p class="description" data-en="Computer vision for image processing and large model data mining." data-zh="图像处理CV，大模型数据挖掘Model。">Computer vision for image processing and large model data mining.</p>
+            </div>
+        </section>
+
+        <section id="competitions" class="container section">
+            <h2 class="section-title" data-en="Competition Experience" data-zh="竞赛经历">Competition Experience</h2>
+            
+            <div class="competition-item">
+                <h3 data-en="Mathematical Contest in Modeling (MCM), USA" data-zh="美国大学生数学建模竞赛">Mathematical Contest in Modeling (MCM), USA</h3>
+                <p class="award" data-en="Finalist Award Nomination" data-zh="Finalist特等奖提名">Finalist Award Nomination</p>
+                <p class="period" data-en="2023.12 - 2024.01" data-zh="2023.12 - 2024.01">2023.12 - 2024.01</p>
+            </div>
+            
+            <div class="competition-item">
+                <h3 data-en="National Mathematical Contest in Modeling (Chongqing Region)" data-zh="高教社全国大学生数学建模竞赛（重庆赛区）">National Mathematical Contest in Modeling (Chongqing Region)</h3>
+                <p class="award" data-en="First Prize (Provincial Level)" data-zh="一等奖（省级）">First Prize (Provincial Level)</p>
+                <p class="period" data-en="2024.11" data-zh="2024.11">2024.11</p>
+            </div>
+            
+            <div class="competition-item">
+                <h3 data-en="China International College Students' Innovation Competition" data-zh="中国国际大学生创新大赛">China International College Students' Innovation Competition</h3>
+                <p class="award" data-en="National Bronze Award" data-zh="国家级铜奖">National Bronze Award</p>
+                <p class="period" data-en="2024.12" data-zh="2024.12">2024.12</p>
+            </div>
+            
+            <div class="competition-item">
+                <h3 data-en="The 11th 'Create Youth' Competition of China (Science and Technology Innovation)" data-zh="第十一届中国青年创青春大赛（科技创新专项）">The 11th "Create Youth" Competition of China (Science and Technology Innovation)</h3>
+                <p class="award" data-en="National Bronze Award (Team Leader)" data-zh="全国铜奖（负责人）">National Bronze Award (Team Leader)</p>
+                <p class="period" data-en="2024.09" data-zh="2024.09">2024.09</p>
+            </div>
+            
+            <div class="competition-item">
+                <h3 data-en="China International College Students' Innovation Competition (Chongqing)" data-zh="中国国际大学生创新大赛（重庆市）">China International College Students' Innovation Competition (Chongqing)</h3>
+                <p class="award" data-en="Silver Award (Team Leader)" data-zh="银奖（负责人）">Silver Award (Team Leader)</p>
+                <p class="period" data-en="2024.08" data-zh="2024.08">2024.08</p>
+            </div>
+            
+            <div class="competition-item">
+                <h3 data-en="'Challenge Cup' Chinese College Students' Entrepreneurship Competition (Chongqing)" data-zh=""挑战杯"中国大学生创业计划竞赛（重庆市）">"Challenge Cup" Chinese College Students' Entrepreneurship Competition (Chongqing)</h3>
+                <p class="award" data-en="Gold Award" data-zh="金奖">Gold Award</p>
+                <p class="period" data-en="2024.07" data-zh="2024.07">2024.07</p>
+            </div>
+            
+            <div class="competition-item">
+                <h3 data-en="'Internet+' China International College Students' Innovation Competition (Chongqing)" data-zh=""互联网+"中国国际大学生创新大赛（重庆市）">"Internet+" China International College Students' Innovation Competition (Chongqing)</h3>
+                <p class="award" data-en="Gold Award" data-zh="金奖">Gold Award</p>
+                <p class="period" data-en="2023.08" data-zh="2023.08">2023.08</p>
+            </div>
+            
+            <div class="competition-item">
+                <h3 data-en="The 23rd National New Concept Writing Competition" data-zh="第二十三届全国新概念作文大赛">The 23rd National New Concept Writing Competition</h3>
+                <p class="award" data-en="National Second Prize" data-zh="全国二等奖">National Second Prize</p>
+                <p class="period" data-en="2021.02" data-zh="2021.02">2021.02</p>
+            </div>
+        </section>
+
+        <section id="publications" class="container section">
+            <h2 class="section-title" data-en="Publications & Achievements" data-zh="成果情况">Publications & Achievements</h2>
+            
+            <div class="publications-container">
+                <div class="publication-category">
+                    <h3 data-en="Academic Papers" data-zh="学术论文">Academic Papers</h3>
+                    <ul>
+                        <li>Xiaodong Li, Boyu Meng, Zhi Zhang, Lijuan Wei, Wei Chang, <strong>Yuhong Wang</strong>, Kai Zhang, Tian Li, Kun Lu, qPrimerDB 2.0: an updated comprehensive gene-specific qPCR primer database for 1172 organisms, <em>Nucleic Acids Research</em>, 2024;, gkae684, <a href="https://doi.org/10.1093/nar/gkae684" target="_blank">https://doi.org/10.1093/nar/gkae684</a>. IF2024=16.6 (TOP期刊), 09 August 2024 (2024)</li>
+                    </ul>
+                </div>
+                
+                <div class="publication-category">
+                    <h3 data-en="Patents" data-zh="发明专利">Patents</h3>
+                    <ul>
+                        <li data-en="Wang Yuhong, Peng Yanrong, et al. Deep mining and decision-making method for big data of agricultural varieties. 202410672739.0, May 28, 2024 (Published)" data-zh="王玉宏，彭焱柔等. 农业育种大数据的深度挖掘与决策方法. 202410672739.0, 2024年05月28日 (已公开)">Wang Yuhong, Peng Yanrong, et al. Deep mining and decision-making method for big data of agricultural varieties. 202410672739.0, May 28, 2024 (Published)</li>
+                    </ul>
+                </div>
+                
+                <div class="publication-category">
+                    <h3 data-en="Software Copyrights" data-zh="软件著作权">Software Copyrights</h3>
+                    <ul>
+                        <li data-en="Wang Yuhong, Li Shuai, Fan Yaya. Big data-driven plant medical system V1.0. 2024SR079216, May 24, 2024" data-zh="王玉宏，李帅，范娅娅. 大数据驱动的植物医疗系统V1.0. 2024SR079216, 2024年05月24日">Wang Yuhong, Li Shuai, Fan Yaya. Big data-driven plant medical system V1.0. 2024SR079216, May 24, 2024</li>
+                        <li data-en="Wang Yuhong, Peng Yanrong, Xu Rongkang. Multi-gene integrated intelligent breeding bioinformatics prediction software V1.0. 2024SR209528, December 17, 2024" data-zh="王玉宏，彭焱柔，徐榕康. 多基因聚合智慧育种生物信息学预测软件V1.0. 2024SR209528, 2024年12月17日">Wang Yuhong, Peng Yanrong, Xu Rongkang. Multi-gene integrated intelligent breeding bioinformatics prediction software V1.0. 2024SR209528, December 17, 2024</li>
+                    </ul>
+                </div>
+                
+                <div class="publication-category">
+                    <h3 data-en="Tool Development" data-zh="工具开发">Tool Development</h3>
+                    <ul>
+                        <li data-en="BrassicaGPT: Fine-tuned with 20+ models" data-zh="BrassicaGPT: 调用20+模型">BrassicaGPT: Fine-tuned with 20+ models</li>
+                    </ul>
+                </div>
+                
+                <div class="publication-category">
+                    <h3 data-en="Website Development" data-zh="网站开发">Website Development</h3>
+                    <ul>
+                        <li data-en="wangyuhong.cn: Cumulative visits over 38w (Statistics as of February 16, 2025)" data-zh="wangyuhong.cn: 累计访问量超38w (统计截至时间: 2025年2月16日)">wangyuhong.cn: Cumulative visits over 38w (Statistics as of February 16, 2025)</li>
+                    </ul>
+                </div>
+                
+                <div class="publication-category">
+                    <h3 data-en="Media Operations" data-zh="媒体运营">Media Operations</h3>
+                    <ul>
+                        <li data-en="Operating public accounts: Traveler Xiaowang, Plant Doctor. Cumulative readership over 100,000 (Statistics as of February 16, 2025)" data-zh="运营公众号行者小王、植此青医，累计阅读量超10万 (统计截至时间: 2025年2月16日)">Operating public accounts: Traveler Xiaowang, Plant Doctor. Cumulative readership over 100,000 (Statistics as of February 16, 2025)</li>
+                    </ul>
+                </div>
+                
+                <div class="publication-category">
+                    <h3 data-en="Honors & Awards" data-zh="获奖荣誉">Honors & Awards</h3>
+                    <ul>
+                        <li data-en="National Scholarship (2024), National Level (1/28)" data-zh="国家奖学金 (2024年)，国家级 (1/28)">National Scholarship (2024), National Level (1/28)</li>
+                        <li data-en="Third-class Scholarship (2023), University Level (7/28)" data-zh="三等奖学金 (2023年)，校级 (7/28)">Third-class Scholarship (2023), University Level (7/28)</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <section id="skills" class="container section">
+            <h2 class="section-title" data-en="Knowledge & Skills" data-zh="知识与技能">Knowledge & Skills</h2>
+            <div class="skills-container">
+                <div class="skill-category">
+                    <h3 data-en="Academic Performance" data-zh="学业绩点">Academic Performance</h3>
+                    <ul>
+                        <li data-en="Latest Academic Year Ranking: 2/28 (7%)" data-zh="最新学年排名2/28 (7%)">Latest Academic Year Ranking: 2/28 (7%)</li>
+                        <li data-en="Latest Comprehensive Evaluation Ranking: 1/28 (3%)" data-zh="最新综合排名1/28 (3%)">Latest Comprehensive Evaluation Ranking: 1/28 (3%)</li>
+                    </ul>
+                    <h3 data-en="English Proficiency" data-zh="英语基础">English Proficiency</h3>
+                    <ul>
+                        <li>CET-4: 512 (2022.10)</li>
+                        <li>CET-6: 472 (2023.06)</li>
+                    </ul>
+                </div>
+                
+                <div class="skill-category">
+                    <h3 data-en="Core Courses" data-zh="核心课程">Core Courses</h3>
+                    <ul>
+                        <li data-en="Smart Agriculture: 99" data-zh="智慧农业: 99">Smart Agriculture: 99</li>
+                        <li data-en="Bioinformatics: 98" data-zh="生物信息学: 98">Bioinformatics: 98</li>
+                        <li data-en="Genetics Lab: 96" data-zh="遗传学实验: 96">Genetics Lab: 96</li>
+                        <li data-en="Molecular Biology: 91" data-zh="分子生物学: 91">Molecular Biology: 91</li>
+                        <li data-en="Biochemistry: 90" data-zh="生物化学: 90">Biochemistry: 90</li>
+                        <li data-en="Information Security: 98" data-zh="信息安全: 98">Information Security: 98</li>
+                        <li data-en="Network & Communication Security: 90" data-zh="网络与通信安全: 90">Network & Communication Security: 90</li>
+                        <li data-en="Data Structures & Algorithms: 88" data-zh="数据结构与算法: 88">Data Structures & Algorithms: 88</li>
+                        <li data-en="Database Principles: 88" data-zh="数据库原理: 88">Database Principles: 88</li>
+                        <li data-en="Java Programming: 87" data-zh="Java程序设计: 87">Java Programming: 87</li>
+                    </ul>
+                </div>
+            
+                
+                <div class="skill-category">
+                    <h3 data-en="Programming Skills" data-zh="编程基础">Programming Skills</h3>
+                    <ul>
+                        <li>Python</li>
+                        <li>Java</li>
+                        <li>R</li>
+                        <li>C</li>
+                        <li>C++</li>
+                        <li>Shell</li>
+                        <li>MATLAB</li>
+                    </ul>
+                </div>
+                
+                <div class="skill-category">
+                    <h3 data-en="Research Interests" data-zh="研究兴趣">Research Interests</h3>
+                    <ul>
+                        <li data-en="1. Molecular Biology Experiments: Vector Construction + Particle Extraction + RNA Extraction" data-zh="1. 分子生物学实验: 载体构建+质粒提取+RNA提取">1. Molecular Biology Experiments: Vector Construction + Particle Extraction + RNA Extraction</li>
+                        <li data-en="2. Bioinformatics Analysis: Transcriptome Analysis + Gene Family Analysis" data-zh="2. 生物信息学分析: 转录组分析+基因家族分析">2. Bioinformatics Analysis: Transcriptome Analysis + Gene Family Analysis</li>
+                        <li data-en="3. Database Platform and Website Frontend Development: Vue3 + Axios + ElementUI + Echarts" data-zh="3. 数据库平台和网站前端开发: Vue3+Axios+ElementUI+Echarts">3. Database Platform and Website Frontend Development: Vue3 + Axios + ElementUI + Echarts</li>
+                        <li data-en="4. Tool Development: Bioinformatics Analysis Tools" data-zh="4. 工具开发: 生信分析工具">4. Tool Development: Bioinformatics Analysis Tools</li>
+                        <li data-en="5. Image Processing and Computer Vision: OpenCV + YOLO" data-zh="5. 图像处理与机器视觉方向: OpenCV+YOLO">5. Image Processing and Computer Vision: OpenCV + YOLO</li>
+                        <li data-en="6. Data Mining and Large Model Direction: Transformer" data-zh="6. 数据挖掘与大模型方向: Transformer">6. Data Mining and Large Model Direction: Transformer</li>
+                        <li data-en="7. Smart Agriculture + Robotics Direction" data-zh="7. 智慧农业+机器人方向">7. Smart Agriculture + Robotics Direction</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <section id="contact" class="container section">
+            <h2 class="section-title" data-en="Contact Me" data-zh="联系方式">Contact Me</h2>
+            <div class="contact-info">
+                <p><strong data-en="Email:" data-zh="邮箱：">Email:</strong> 
+                    <a href="mailto:wyhstar@email.swu.edu.cn">wyhstar@email.swu.edu.cn</a> / 
+                    <a href="mailto:echooler@gmail.com">echooler@gmail.com</a>
+                </p>
+                <p><strong data-en="GitHub:" data-zh="GitHub：">GitHub:</strong> <a href="https://github.com/yuhong2024" target="_blank">github.com/yuhong2024</a></p>
+                <p><strong data-en="Personal Website:" data-zh="个人网站：">Personal Website:</strong> <a href="http://wangyuhong.cn" target="_blank">wangyuhong.cn</a></p>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="container">
+            <p id="copyright" data-en="© 2024 Yuhong Wang. All rights reserved." data-zh="© 2024 王玉宏。保留所有权利。">© 2024 Yuhong Wang. All rights reserved.</p>
+        </div>
+    </footer>
 </body>
 </html>
