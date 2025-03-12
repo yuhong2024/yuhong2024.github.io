@@ -1,0 +1,285 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AdaHub | 网站导航</title>
+    <link rel="stylesheet" href="css/style.css">
+    <script src="js/main.js" defer></script>
+    <style>
+        .adahub-container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+        .category {
+            margin-bottom: 30px;
+            background: #fff;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+        }
+        .category h2 {
+            margin-bottom: 15px;
+            border-bottom: 2px solid #eaeaea;
+            padding-bottom: 10px;
+            color: #333;
+        }
+        .subcategory {
+            margin-bottom: 20px;
+        }
+        .subcategory h3 {
+            margin-bottom: 10px;
+            color: #444;
+        }
+        .link-list {
+            list-style-type: none;
+            padding-left: 0;
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+            gap: 10px;
+        }
+        .link-list li {
+            margin-bottom: 10px;
+            padding: 8px;
+            border-radius: 4px;
+            transition: background-color 0.2s;
+        }
+        .link-list li:hover {
+            background-color: #f5f5f5;
+        }
+        .link-list a {
+            text-decoration: none;
+            color: #0366d6;
+        }
+        .link-list a:hover {
+            text-decoration: underline;
+        }
+        .link-description {
+            font-size: 0.9em;
+            color: #555;
+            margin-left: 5px;
+        }
+        @media (max-width: 768px) {
+            .link-list {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="container">
+            <div class="logo">
+                <h1 id="name-title">AdaHub</h1>
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="index.html" class="nav-link" data-en="Home" data-zh="首页">Home</a></li>
+                    <li><a href="#ai-tools" class="nav-link" data-en="AI Tools" data-zh="AI工具">AI Tools</a></li>
+                    <li><a href="#academic" class="nav-link" data-en="Academic" data-zh="学术资源">Academic</a></li>
+                    <li><a href="#development" class="nav-link" data-en="Development" data-zh="开发资源">Development</a></li>
+                    <li><a href="#learning" class="nav-link" data-en="Learning" data-zh="学习资源">Learning</a></li>
+                    <li><a href="#bioinformatics" class="nav-link" data-en="Bioinformatics" data-zh="生物信息">Bioinformatics</a></li>
+                </ul>
+            </nav>
+            <div class="language-switch">
+                <button id="en-btn" class="active">EN</button>
+                <button id="zh-btn">中文</button>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <div class="adahub-container">
+            <h1 data-en="AdaHub Personal Navigation" data-zh="AdaHub 个人网站导航">AdaHub Personal Navigation</h1>
+            <p data-en="A curated collection of useful websites and resources." data-zh="精心整理的实用网站和资源集合。">A curated collection of useful websites and resources.</p>
+            
+            <div class="category" id="ai-tools">
+                <h2>📌 常用工具</h2>
+                <div class="subcategory">
+                    <h3>🤖 AI 与对话工具</h3>
+                    <ul class="link-list">
+                        <li><a href="https://chat.deepseek.com/" target="_blank">DeepSeek</a> <span class="link-description">- 人工智能对话工具</span></li>
+                        <li><a href="https://yuanbao.tencent.com/" target="_blank">腾讯元宝</a> <span class="link-description">- 腾讯AI助手</span></li>
+                        <li><a href="https://chatgpt.com/" target="_blank">ChatGPT</a> <span class="link-description">- OpenAI对话模型</span></li>
+                    </ul>
+                </div>
+                <div class="subcategory">
+                    <h3>📺 内容与社区平台</h3>
+                    <ul class="link-list">
+                        <li><a href="https://www.bilibili.com/" target="_blank">哔哩哔哩</a> <span class="link-description">- 中文视频分享平台</span></li>
+                        <li><a href="https://www.youtube.com/" target="_blank">YouTube</a> <span class="link-description">- 国际视频平台</span></li>
+                        <li><a href="https://www.zhihu.com/" target="_blank">知乎</a> <span class="link-description">- 中文问答社区</span></li>
+                        <li><a href="https://www.quora.com/" target="_blank">Quora</a> <span class="link-description">- 国际问答平台</span></li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="category" id="academic">
+                <h2>📚 学术研究资源</h2>
+                <div class="subcategory">
+                    <h3>📖 学术论文检索</h3>
+                    <ul class="link-list">
+                        <li><a href="https://papers.cool/arxiv/cs.CL?show=50" target="_blank">CS论文推送</a> <span class="link-description">- 计算机科学论文推送</span></li>
+                        <li><a href="https://papers.cool/" target="_blank">沉浸式论文发现</a> <span class="link-description">- 论文发现平台</span></li>
+                        <li><a href="https://cnspub.com/" target="_blank">CNS学术导航</a> <span class="link-description">- 学术资源导航</span></li>
+                        <li><a href="http://www.lib.swu.edu.cn/libweb/digitalDatabase/result/S" target="_blank">西大图书馆</a> <span class="link-description">- 西南大学图书馆资源</span></li>
+                        <li><a href="https://scholar.google.com/" target="_blank">谷歌学术</a> <span class="link-description">- 学术搜索引擎</span></li>
+                        <li><a href="https://sci-hub.usualwant.com/" target="_blank">SCI-HUB</a> <span class="link-description">- 文献下载平台</span></li>
+                        <li><a href="https://arxiv.org/" target="_blank">arxiv</a> <span class="link-description">- 预印本论文平台</span></li>
+                        <li><a href="https://ieeexplore.ieee.org/Xplore/home.jsp" target="_blank">IEEE</a> <span class="link-description">- 电气电子工程师学会资源库</span></li>
+                        <li><a href="https://www.ccf.org.cn/Academic_Evaluation/By_category/" target="_blank">CCF类</a> <span class="link-description">- 中国计算机学会推荐期刊会议目录</span></li>
+                        <li><a href="https://www.bookstack.cn/" target="_blank">书栈网</a> <span class="link-description">- 开源IT文档分享平台</span></li>
+                        <li><a href="https://zh.z-library.sk/" target="_blank">Zlibrary</a> <span class="link-description">- 电子书下载平台</span></li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="category" id="development">
+                <h2>💻 开发者资源</h2>
+                <div class="subcategory">
+                    <h3>🔧 开发工具与教程</h3>
+                    <ul class="link-list">
+                        <li><a href="https://github.com/yuhong2024" target="_blank">GitHub</a> <span class="link-description">- 代码托管平台</span></li>
+                        <li><a href="https://www.bookstack.cn/read/backlog-git-tutorial/2.md" target="_blank">Git教程</a> <span class="link-description">- Git版本控制指南</span></li>
+                    </ul>
+                </div>
+                <div class="subcategory">
+                    <h3>👥 开发者社区</h3>
+                    <ul class="link-list">
+                        <li><a href="https://www.cnblogs.com/" target="_blank">博客园</a> <span class="link-description">- 开发者博客社区</span></li>
+                        <li><a href="https://juejin.cn/" target="_blank">稀土掘金</a> <span class="link-description">- 技术分享社区</span></li>
+                        <li><a href="https://www.v2ex.com/" target="_blank">V2EX</a> <span class="link-description">- 创意工作者社区</span></li>
+                        <li><a href="https://news.ycombinator.com/news" target="_blank">Hacker News</a> <span class="link-description">- 科技新闻与讨论平台</span></li>
+                        <li><a href="https://stackoverflow.com/" target="_blank">Stack Overflow</a> <span class="link-description">- 编程问答社区</span></li>
+                        <li><a href="https://www.sitepoint.com/community/" target="_blank">SitePoint</a> <span class="link-description">- 网页开发社区</span></li>
+                    </ul>
+                </div>
+                <div class="subcategory">
+                    <h3>🏆 编程练习平台</h3>
+                    <ul class="link-list">
+                        <li><a href="https://leetcode.cn/" target="_blank">力扣</a> <span class="link-description">- 编程题库与竞赛平台</span></li>
+                        <li><a href="https://www.luogu.com.cn/" target="_blank">洛谷</a> <span class="link-description">- 算法竞赛训练平台</span></li>
+                    </ul>
+                </div>
+                <div class="subcategory">
+                    <h3>🐍 Python资源</h3>
+                    <ul class="link-list">
+                        <li><a href="https://docs.python.org/zh-cn/3.13/tutorial/index.html" target="_blank">Python官方手册</a> <span class="link-description">- 官方教程</span></li>
+                        <li><a href="https://github.com/jackfrued/Python-100-Days/tree/master" target="_blank">Python 100天</a> <span class="link-description">- 100天学习路线</span></li>
+                        <li><a href="https://github.com/lyhue1991/eat_pytorch_in_20_days" target="_blank">20天学完PyTorch</a> <span class="link-description">- PyTorch快速入门</span></li>
+                        <li><a href="https://woodpecker.org.cn/diveintopython3/index.html" target="_blank">深入Python3</a> <span class="link-description">- Python进阶教程</span></li>
+                        <li><a href="https://pyecharts.org/#/" target="_blank">PyEcharts</a> <span class="link-description">- Python图表可视化库</span></li>
+                    </ul>
+                </div>
+                <div class="subcategory">
+                    <h3>🖥️ 前端开发资源</h3>
+                    <ul class="link-list">
+                        <li><a href="https://vue-data-ui.graphieros.com/docs" target="_blank">Vue Data UI</a> <span class="link-description">- Vue数据可视化组件</span></li>
+                        <li><a href="https://element-plus.org/zh-CN/" target="_blank">Element Plus</a> <span class="link-description">- Vue3组件库</span></li>
+                        <li><a href="https://echarts.apache.org/handbook/zh/get-started" target="_blank">ECharts</a> <span class="link-description">- 数据可视化图表库</span></li>
+                        <li><a href="https://www.axios-http.cn/docs/req_config" target="_blank">Axios</a> <span class="link-description">- HTTP客户端</span></li>
+                        <li><a href="https://d3js.org/d3-random" target="_blank">D3.js</a> <span class="link-description">- 数据可视化库</span></li>
+                        <li><a href="http://120.92.142.115:81/vform3/" target="_blank">VForm 3</a> <span class="link-description">- 可视化表单设计器</span></li>
+                        <li><a href="https://cn.vitejs.dev/" target="_blank">Vite</a> <span class="link-description">- 前端构建工具</span></li>
+                        <li><a href="https://alvarotrigo.com/fullPage/examples/#parallax-effect" target="_blank">FullPage.js</a> <span class="link-description">- 全屏滚动插件</span></li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="category" id="learning">
+                <h2>📖 学习资源</h2>
+                <div class="subcategory">
+                    <h3>🎓 计算机科学学习</h3>
+                    <ul class="link-list">
+                        <li><a href="https://csdiy.wiki/" target="_blank">北大CS自学指南</a> <span class="link-description">- 计算机科学自学路线</span></li>
+                        <li><a href="https://missing-semester-cn.github.io/2020/course-shell/" target="_blank">MIT缺失的计算机课程</a> <span class="link-description">- 实用计算机技能</span></li>
+                        <li><a href="https://geekdaxue.co/" target="_blank">技术私房菜</a> <span class="link-description">- 综合技术学习平台</span></li>
+                    </ul>
+                </div>
+                <div class="subcategory">
+                    <h3>🐧 编程教程平台</h3>
+                    <ul class="link-list">
+                        <li><a href="https://linux.vbird.org/" target="_blank">鸟哥的Linux私房菜</a> <span class="link-description">- Linux学习指南</span></li>
+                        <li><a href="https://www.runoob.com/" target="_blank">菜鸟教程</a> <span class="link-description">- 编程语言入门教程</span></li>
+                        <li><a href="https://geek-docs.com/" target="_blank">极客教程</a> <span class="link-description">- 技术文档教程</span></li>
+                        <li><a href="https://liaoxuefeng.com/" target="_blank">廖雪峰编程小站</a> <span class="link-description">- 编程教程博客</span></li>
+                        <li><a href="https://www.dengruicode.com/" target="_blank">邓瑞编程小站</a> <span class="link-description">- 编程学习资源</span></li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="category" id="bioinformatics">
+                <h2>🧬 生物信息学资源</h2>
+                <div class="subcategory">
+                    <h3>🔬 综合数据库</h3>
+                    <ul class="link-list">
+                        <li><a href="https://www.scidb.cn/en/list" target="_blank">科学数据银行</a> <span class="link-description">- 科学数据资源库</span></li>
+                        <li><a href="https://bis.zju.edu.cn/DaTo2/index.html" target="_blank">浙大数据库导航</a> <span class="link-description">- 生物信息学数据导航</span></li>
+                        <li><a href="https://www.expasy.org/" target="_blank">Swiss生信导航</a> <span class="link-description">- 生物信息学资源门户</span></li>
+                    </ul>
+                </div>
+                <div class="subcategory">
+                    <h3>🧫 西南大学生物信息数据库</h3>
+                    <ul class="link-list">
+                        <li><a href="https://brassicaedb.com/#/" target="_blank">芸苔属转录组</a> <span class="link-description">- 芸苔属转录组数据库</span></li>
+                        <li><a href="https://brassica.biodb.org/" target="_blank">芸苔属1.0</a> <span class="link-description">- 芸苔属基因组数据库</span></li>
+                        <li><a href="https://qprimerdb.biodb.org/" target="_blank">引物设计</a> <span class="link-description">- qPCR引物设计工具</span></li>
+                        <li><a href="https://biodb.org/" target="_blank">西大生信平台</a> <span class="link-description">- 综合生物信息平台</span></li>
+                        <li><a href="https://iarray.cn/accession/#/" target="_blank">油菜种质资源</a> <span class="link-description">- 油菜种质资源库</span></li>
+                        <li><a href="https://sgs.bioinfotoolkits.net/home" target="_blank">单细胞基因组</a> <span class="link-description">- 单细胞基因组测序</span></li>
+                        <li><a href="https://dsrna-engineer.cn/" target="_blank">dsRNA设计</a> <span class="link-description">- dsRNA设计工具</span></li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="category" id="english">
+                <h2>🌐 英语学习资源</h2>
+                <div class="subcategory">
+                    <h3>📝 雅思备考</h3>
+                    <ul class="link-list">
+                        <li><a href="https://www.ieltsday.com/" target="_blank">开源雅思小站</a> <span class="link-description">- 雅思备考资源</span></li>
+                        <li><a href="https://ielts.neea.edu.cn/profile/homepage" target="_blank">教育部雅思报名</a> <span class="link-description">- 官方雅思报名平台</span></li>
+                        <li><a href="https://ieltscat.xdf.cn/" target="_blank">新东方雅思模拟</a> <span class="link-description">- 雅思机考模拟系统</span></li>
+                        <li><a href="https://britishcouncil.gelielts.cn/login" target="_blank">雅思官方备考</a> <span class="link-description">- 官方备考资源</span></li>
+                    </ul>
+                </div>
+                <div class="subcategory">
+                    <h3>📚 英语学习工具</h3>
+                    <ul class="link-list">
+                        <li><a href="https://dictionary.cambridge.org/" target="_blank">剑桥词典</a> <span class="link-description">- 英语学习词典</span></li>
+                        <li><a href="https://web.shanbay.com/web/main/index" target="_blank">扇贝单词</a> <span class="link-description">- 单词学习工具</span></li>
+                        <li><a href="https://dict.eudic.net/ting" target="_blank">每日英语听力</a> <span class="link-description">- 英语听力练习</span></li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="category" id="competitions">
+                <h2>🏆 竞赛资源</h2>
+                <div class="subcategory">
+                    <h3>🧮 数学建模</h3>
+                    <ul class="link-list">
+                        <li><a href="https://www.contest.comap.com/undergraduate/contests/mcm/login.php" target="_blank">美国数学建模竞赛</a> <span class="link-description">- MCM/ICM竞赛</span></li>
+                    </ul>
+                </div>
+                <div class="subcategory">
+                    <h3>🧬 iGEM合成生物学竞赛</h3>
+                    <ul class="link-list">
+                        <li><a href="https://2024.igem.wiki/swuer-china/index.html" target="_blank">团队Wiki</a> <span class="link-description">- 团队项目展示</span></li>
+                        <li><a href="https://gitlab.igem.org/2024/swuer-china" target="_blank">项目仓库</a> <span class="link-description">- 代码与资源管理</span></li>
+                        <li><a href="https://competition.igem.org/judging/rubric" target="_blank">评审规则</a> <span class="link-description">- 竞赛评分标准</span></li>
+                        <li><a href="https://igem.net.cn/" target="_blank">iGEM中文网站</a> <span class="link-description">- 中文社区资源</span></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        <div class="container">
+            <p id="copyright" data-en="© 2024 Yuhong Wang. All rights reserved." data-zh="© 2024 王玉宏。保留所有权利。">© 2024 Yuhong Wang. All rights reserved.</p>
+        </div>
+    </footer>
+</body>
+</html>
