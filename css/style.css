@@ -1,4 +1,4 @@
-/* 全局样式 */
+/* 重置默认样式 */
 * {
     margin: 0;
     padding: 0;
@@ -13,30 +13,20 @@ body {
 }
 
 .container {
-    width: 90%;
     max-width: 1200px;
     margin: 0 auto;
     padding: 0 20px;
 }
 
-a {
-    text-decoration: none;
-    color: #0066cc;
-    transition: color 0.3s;
-}
-
-a:hover {
-    color: #004080;
-}
-
 /* 头部样式 */
 header {
-    background-color: #fff;
-    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    color: white;
+    padding: 1rem 0;
     position: sticky;
     top: 0;
-    z-index: 100;
-    padding: 15px 0;
+    z-index: 1000;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.1);
 }
 
 header .container {
@@ -47,470 +37,267 @@ header .container {
 
 .logo h1 {
     font-size: 1.8rem;
-    font-weight: 600;
-    color: #333;
+    font-weight: 300;
 }
 
 nav ul {
     display: flex;
     list-style: none;
+    gap: 2rem;
 }
 
-nav ul li {
-    margin-left: 25px;
-}
-
-nav ul li a {
-    color: #555;
-    font-weight: 500;
-    padding: 5px 0;
-    position: relative;
-}
-
-nav ul li a:hover {
-    color: #0066cc;
-}
-
-nav ul li a::after {
-    content: '';
-    position: absolute;
-    width: 0;
-    height: 2px;
-    bottom: 0;
-    left: 0;
-    background-color: #0066cc;
-    transition: width 0.3s;
-}
-
-nav ul li a:hover::after {
-    width: 100%;
-}
-
-.language-switch {
-    display: flex;
-    gap: 10px;
-}
-
-.language-switch button {
-    background: none;
-    border: 1px solid #ddd;
-    padding: 5px 10px;
-    border-radius: 4px;
-    cursor: pointer;
-    font-size: 0.9rem;
-    transition: all 0.3s;
-}
-
-.language-switch button.active {
-    background-color: #0066cc;
+nav a {
     color: white;
-    border-color: #0066cc;
+    text-decoration: none;
+    padding: 0.5rem 1rem;
+    border-radius: 25px;
+    transition: all 0.3s ease;
 }
 
-/* 英雄区域样式 */
-#hero {
-    display: none;
+nav a:hover {
+    background-color: rgba(255,255,255,0.2);
+    transform: translateY(-2px);
 }
 
-/* 章节通用样式 */
+/* 主要内容区域 */
+main {
+    padding: 2rem 0;
+}
+
 .section {
-    padding: 60px 0;
-    border-bottom: 1px solid #eee;
+    margin-bottom: 4rem;
+    padding: 2rem;
+    background: white;
+    border-radius: 15px;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.08);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
-.section-title {
+.section:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 25px rgba(0,0,0,0.15);
+}
+
+.section h2 {
+    color: #667eea;
+    margin-bottom: 1.5rem;
     font-size: 2rem;
-    margin-bottom: 40px;
     text-align: center;
-    color: #333;
     position: relative;
 }
 
-.section-title::after {
+.section h2::after {
     content: '';
     position: absolute;
-    width: 60px;
-    height: 3px;
-    background-color: #0066cc;
     bottom: -10px;
     left: 50%;
     transform: translateX(-50%);
+    width: 60px;
+    height: 3px;
+    background: linear-gradient(135deg, #667eea, #764ba2);
+    border-radius: 2px;
+}
+
+.section h3 {
+    color: #555;
+    margin-bottom: 0.5rem;
+    font-size: 1.3rem;
 }
 
 /* 关于我部分 */
 .about-content {
-    display: flex;
-    align-items: flex-start;
-    gap: 50px;
-    padding: 20px 0;
-}
-
-.about-text {
-    flex: 1.5;
-}
-
-.about-header {
-    margin-bottom: 25px;
-}
-
-.about-name {
-    font-size: 2.5em;
-    margin-bottom: 10px;
-    color: #2c3e50;
-}
-
-.about-role {
-    font-size: 1.2em;
-    color: #34495e;
-    margin-bottom: 20px;
-}
-
-#about-paragraph {
-    font-size: 1.1em;
-    line-height: 1.8;
-    color: #2c3e50;
-    margin-bottom: 30px;
-}
-
-.about-image {
-    flex: 1;
-    display: flex;
-    justify-content: center;
-}
-
-.profile-photo {
-    width: 250px;
-    height: 250px;
-    border-radius: 50%;
-    object-fit: cover;
-    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
-}
-
-.about-stats {
-    display: flex;
-    justify-content: space-between;
-    flex-wrap: wrap;
-    gap: 20px;
-    padding: 20px;
-    background: rgba(241, 245, 249, 0.8);
-    border-radius: 10px;
-    margin-top: 20px;
-}
-
-.stat-item {
-    flex: 1;
-    min-width: 180px;
     text-align: center;
-    padding: 10px;
 }
 
-.stat-label {
-    display: block;
-    font-size: 0.9em;
-    color: #64748b;
-    margin-bottom: 5px;
-}
-
-.stat-value {
-    display: block;
-    font-size: 1.1em;
-    font-weight: 600;
-    color: #2c3e50;
-}
-
-/* 教育经历部分 */
-.education-item {
-    background-color: white;
-    padding: 30px;
-    border-radius: 8px;
-    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
-    margin-bottom: 30px;
-}
-
-.education-item h3 {
-    font-size: 1.5rem;
-    margin-bottom: 10px;
-    color: #333;
-}
-
-.education-item .degree {
-    font-weight: 600;
-    color: #0066cc;
-    margin-bottom: 5px;
-}
-
-.education-item .year {
+.about-text p {
+    font-size: 1.2rem;
     color: #666;
-    margin-bottom: 15px;
-}
-
-/* 项目部分 */
-.projects-grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
-    gap: 30px;
-}
-
-.project-card {
-    background-color: white;
-    border-radius: 8px;
-    overflow: hidden;
-    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
-    transition: transform 0.3s;
-    padding: 25px;
-}
-
-.project-card:hover {
-    transform: translateY(-5px);
-}
-
-.project-card h3 {
-    font-size: 1.3rem;
-    margin-bottom: 15px;
-    color: #333;
-}
-
-.project-card p {
-    color: #666;
-    margin-bottom: 20px;
-}
-
-.project-links {
-    display: flex;
-    gap: 15px;
-}
-
-.project-links a {
-    display: inline-block;
-    padding: 8px 15px;
-    background-color: #0066cc;
-    color: white;
-    border-radius: 4px;
-    font-size: 0.9rem;
-    transition: background-color 0.3s;
-}
-
-.project-links a:hover {
-    background-color: #004080;
-}
-
-/* 技能部分 */
-.skills-container {
-    display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
-    gap: 30px;
-}
-
-.skill-category {
-    background-color: white;
-    padding: 25px;
-    border-radius: 8px;
-    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
-}
-
-.skill-category h3 {
-    font-size: 1.3rem;
-    margin-bottom: 15px;
-    color: #333;
-    padding-bottom: 10px;
-    border-bottom: 2px solid #eee;
-}
-
-.skill-category ul {
-    list-style-position: inside;
-    color: #555;
-}
-
-.skill-category ul li {
-    margin-bottom: 8px;
-}
-
-/* 联系部分 */
-.contact-info {
-    background-color: white;
-    padding: 30px;
-    border-radius: 8px;
-    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
     max-width: 600px;
     margin: 0 auto;
 }
 
-.contact-info p {
-    margin-bottom: 15px;
+/* 教育背景部分 */
+.education-item {
+    background: #f8f9fa;
+    padding: 1.5rem;
+    margin-bottom: 1rem;
+    border-radius: 10px;
+    border-left: 4px solid #667eea;
 }
 
-/* 页脚样式 */
-footer {
-    background-color: #333;
-    color: #fff;
-    padding: 30px 0;
+.education-item:last-child {
+    margin-bottom: 0;
+}
+
+.education-item p {
+    color: #666;
+    margin-bottom: 0.5rem;
+}
+
+/* 研究经历部分 */
+.research-item {
+    background: #f8f9fa;
+    padding: 1.5rem;
+    margin-bottom: 1rem;
+    border-radius: 10px;
+    border-left: 4px solid #764ba2;
+}
+
+.research-item:last-child {
+    margin-bottom: 0;
+}
+
+.research-item p {
+    color: #666;
+    margin-bottom: 0.5rem;
+}
+
+/* 竞赛经历部分 */
+.competition-item {
+    background: #f8f9fa;
+    padding: 1.5rem;
+    margin-bottom: 1rem;
+    border-radius: 10px;
+    border-left: 4px solid #667eea;
+}
+
+.competition-item:last-child {
+    margin-bottom: 0;
+}
+
+.competition-item p {
+    color: #666;
+    margin-bottom: 0.5rem;
+}
+
+/* 成果展示部分 */
+.publications-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 1.5rem;
+}
+
+.publication-category {
+    background: #f8f9fa;
+    padding: 1.5rem;
+    border-radius: 10px;
+    border-left: 4px solid #764ba2;
+}
+
+.publication-category h3 {
+    color: #667eea;
+    margin-bottom: 1rem;
+}
+
+.publication-category ul {
+    list-style: none;
+}
+
+.publication-category li {
+    padding: 0.5rem 0;
+    border-bottom: 1px solid #e9ecef;
+    color: #666;
+}
+
+.publication-category li:last-child {
+    border-bottom: none;
+}
+
+/* 技能特长部分 */
+.skills-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 2rem;
+}
+
+.skill-category {
+    background: #f8f9fa;
+    padding: 1.5rem;
+    border-radius: 10px;
+    border-left: 4px solid #667eea;
+}
+
+.skill-category h3 {
+    color: #667eea;
+    margin-bottom: 1rem;
+}
+
+.skill-category ul {
+    list-style: none;
+}
+
+.skill-category li {
+    padding: 0.5rem 0;
+    border-bottom: 1px solid #e9ecef;
+    color: #666;
+}
+
+.skill-category li:last-child {
+    border-bottom: none;
+}
+
+/* 联系方式部分 */
+.contact-info {
     text-align: center;
+}
+
+.contact-info p {
+    font-size: 1.1rem;
+    color: #666;
+}
+
+/* 页脚 */
+footer {
+    background: #333;
+    color: white;
+    text-align: center;
+    padding: 2rem 0;
+    margin-top: 2rem;
 }
 
 /* 响应式设计 */
 @media (max-width: 768px) {
     header .container {
         flex-direction: column;
-        gap: 15px;
+        gap: 1rem;
     }
     
     nav ul {
         flex-wrap: wrap;
         justify-content: center;
+        gap: 1rem;
     }
     
-    nav ul li {
-        margin: 5px 10px;
+    .section {
+        padding: 1.5rem;
+        margin-bottom: 2rem;
     }
     
-    .about-content {
-        flex-direction: column-reverse;
-        align-items: center;
-        text-align: center;
-    }
-    
-    .about-text {
-        width: 100%;
-    }
-    
-    .about-stats {
-        flex-direction: column;
-    }
-    
-    .stat-item {
-        width: 100%;
-    }
-    
-    .section-title {
-        font-size: 1.8rem;
-    }
-    
-    .hero-content h2 {
-        font-size: 2rem;
-    }
-}
-
-@media (max-width: 480px) {
-    .projects-grid,
+    .publications-container,
     .skills-container {
         grid-template-columns: 1fr;
     }
     
-    .section {
-        padding: 40px 0;
+    .section h2 {
+        font-size: 1.5rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .container {
+        padding: 0 15px;
     }
     
-    #hero {
-        padding: 60px 0;
+    .section {
+        padding: 1rem;
     }
-}
-
-/* 移除之前的照片占位符样式 */
-.photo-placeholder {
-    display: none;
-}
-
-.research-projects {
-    display: flex;
-    flex-direction: column;
-    gap: 2rem;
-    margin-bottom: 2rem;
-}
-
-.project-card {
-    display: flex;
-    gap: 2rem;
-    padding: 2rem;
-    background: #ffffff;
-    border-radius: 12px;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-    transition: transform 0.3s ease;
-}
-
-.project-card:hover {
-    transform: translateY(-5px);
-}
-
-.project-image {
-    flex: 0 0 300px;
-    height: 200px;
-    overflow: hidden;
-    border-radius: 8px;
-}
-
-.project-image img {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-}
-
-.project-content {
-    flex: 1;
-}
-
-.project-content h3 {
-    margin: 0 0 1rem;
-    color: #2c3e50;
-    font-size: 1.5rem;
-}
-
-.authors {
-    color: #666;
-    margin-bottom: 0.5rem;
-}
-
-.venue {
-    color: #2980b9;
-    margin-bottom: 1rem;
-    font-weight: 500;
-}
-
-.description {
-    color: #555;
-    line-height: 1.6;
-    margin-bottom: 1.5rem;
-}
-
-.project-link {
-    display: inline-block;
-    padding: 0.5rem 1rem;
-    background: #3498db;
-    color: white;
-    text-decoration: none;
-    border-radius: 4px;
-    transition: background 0.3s ease;
-}
-
-.project-link:hover {
-    background: #2980b9;
-}
-
-.view-all-projects {
-    text-align: center;
-    margin-top: 2rem;
-}
-
-.view-all-link {
-    display: inline-block;
-    padding: 0.8rem 2rem;
-    background: #2c3e50;
-    color: white;
-    text-decoration: none;
-    border-radius: 4px;
-    transition: background 0.3s ease;
-    font-weight: 500;
-}
-
-.view-all-link:hover {
-    background: #34495e;
-}
-
-@media (max-width: 768px) {
-    .project-card {
-        flex-direction: column;
+    
+    nav ul {
+        gap: 0.5rem;
     }
-
-    .project-image {
-        flex: 0 0 200px;
+    
+    nav a {
+        padding: 0.3rem 0.8rem;
+        font-size: 0.9rem;
     }
 } 
