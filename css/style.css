@@ -34,9 +34,13 @@ body {
 
 /* Content spacing */
 h2 { font-size: 18px; margin: 0 0 8px; font-weight: 700; color: #111; }
+h3 { font-size: 16px; margin: 12px 0 6px; font-weight: 600; color: #333; }
 p { margin: 8px 0; }
 ul, ol { margin: 8px 0 8px 20px; }
 li { margin: 4px 0; }
+a { color: #0055cc; text-decoration: none; }
+a:hover { text-decoration: underline; }
+.advisor-link { font-size: 0.85em; color: #666; font-weight: normal; }
 .site-footer { color: #666; font-size: 14px; padding: 24px 0; border-top: 1px solid #eee; margin-top: 30px; }
 
 /* (no details now) */
