@@ -3,24 +3,32 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Personal Website</title>
+    <meta name="description" content="Yuhong Wang — AI & Computational Biology. Academic homepage with news, publications, projects, and contact.">
+    <title>Yuhong Wang | AI & Computational Biology</title>
     <link rel="stylesheet" href="css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
 </head>
 <body>
+    <a class="skip-link" href="#about">Skip to content</a>
     <header>
         <div class="container">
             <div class="logo">
-                <h1>Personal Website</h1>
+                <h1>Yuhong Wang</h1>
             </div>
             <nav>
                 <ul>
-                    <li><a href="#about">About</a></li>
-                    <li><a href="#education">Education</a></li>
-                    <li><a href="#research">Research</a></li>
-                    <li><a href="#competitions">Competitions</a></li>
-                    <li><a href="#publications">Publications</a></li>
-                    <li><a href="#skills">Skills</a></li>
-                    <li><a href="#contact">Contact</a></li>
+                    <li><a class="nav-link" href="#about">About</a></li>
+                    <li><a class="nav-link" href="#news">News</a></li>
+                    <li><a class="nav-link" href="#education">Education</a></li>
+                    <li><a class="nav-link" href="#experiences">Internships</a></li>
+                    <li><a class="nav-link" href="#awards">Awards</a></li>
+                    <li><a class="nav-link" href="#publications">Publications</a></li>
+                    <li><a class="nav-link" href="#projects">Projects</a></li>
+                    <li><a class="nav-link" href="#interests">Interests</a></li>
+                    <li><a class="nav-link" href="#service">Service</a></li>
+                    <li><a class="nav-link" href="#contact">Contact</a></li>
                 </ul>
             </nav>
         </div>
@@ -29,77 +37,134 @@
     <main>
         <section id="about" class="container section">
             <h2>About Me</h2>
-            <div class="about-content">
+            <div class="hero">
+                <img class="avatar" src="me.jpg" alt="Portrait of Yuhong Wang" width="112" height="112" loading="lazy">
                 <div class="about-text">
-                    <p>Add your personal introduction here...</p>
+                    <p>I am an aspiring PhD candidate in Biotechnology at Peking University, where I am honored to be co-advised by Prof. Deng Xingwang and Research Fellow He Hang. Prior to joining Peking University, I will receive dual Bachelor's degrees in Agronomy and Engineering from Southwest University in June 2026. My academic journey has been shaped by the Shennong Class (Honors Program) at Honghong College, which laid a strong interdisciplinary foundation in life sciences and computer science. My research focuses on AI and computational biology, with a particular emphasis on large models for smart breeding. Explore my publications and projects below, or see my CV. I also maintain personal blogs. Feel free to reach out via email.</p>
+                    <div class="links" aria-label="Profile links">
+                        <a class="btn" href="mailto:echooler@gmail.com" aria-label="Send email to Yuhong">Email</a>
+                        <a class="btn" href="https://github.com/yuhong2024" target="_blank" rel="noopener" aria-label="GitHub profile of Yuhong">GitHub</a>
+                        <a class="btn" href="https://wangyuhong.cn" target="_blank" rel="noopener" aria-label="Chinese blog">Blog (CN)</a>
+                        <a class="btn" href="https://echooler.com" target="_blank" rel="noopener" aria-label="English blog">Blog (EN)</a>
+                        <a class="btn btn-outline" href="resume.md" target="_blank" rel="noopener" aria-label="View CV">CV</a>
+                    </div>
                 </div>
             </div>
+        </section>
+
+        <section id="news" class="container section">
+            <h2>News</h2>
+            <ul class="timeline">
+                <li><span class="date">2025.07</span> Our team won the First Prize at the China University Computer Design Competition (team lead).</li>
+                <li><span class="date">2025.04</span> Invention patent on intelligent decision-making for agricultural breeding big data publicly disclosed.</li>
+                <li><span class="date">2024.05</span> Finalist (F Award), Mathematical Contest in Modeling (MCM).</li>
+                <li><span class="date">2024.03</span> Special Prize (Provincial), 19th “Challenge Cup”.</li>
+            </ul>
         </section>
 
         <section id="education" class="container section">
             <h2>Education</h2>
             <div class="education-item">
-                <h3>Education Title</h3>
-                <p>Education description...</p>
-                <p>Time period...</p>
+                <h3>Ph.D. in Biotechnology (expected Fall 2026) — Peking University</h3>
+                <p>Research Focus: Large Models for Plant Breeding | Advisors: Prof. Deng Xingwang; Research Fellow He Hang</p>
+            </div>
+            <div class="education-item">
+                <h3>B.S. in Agronomy & B.Eng. in Information Security — Southwest University</h3>
+                <p>Sep 2022 – Jul 2026, Chongqing. Shennong Class, Honghong College (Honors Program, Bioinformatics track).</p>
+                <p>Agronomy: Research training at State Key Laboratory of Silkworm Genome Biology and College of Agriculture and Biotechnology.</p>
+                <p>Information Security: Coursework and capstone at College of Electronic and Information Engineering and College of Artificial Intelligence.</p>
             </div>
         </section>
 
-        <section id="research" class="container section">
-            <h2>Research Experience</h2>
-            <div class="research-item">
-                <h3>Research Project Title</h3>
-                <p>Project description...</p>
-                <p>Time period...</p>
-            </div>
+        <section id="experiences" class="container section">
+            <h2>Internships & Visiting</h2>
+            <ul class="list">
+                <li>Institute of Genetics and Developmental Biology, Chinese Academy of Sciences</li>
+                <li>Chinese Academy of Medical Sciences & Peking Union Medical College</li>
+                <li>Shenzhen Bay Laboratory</li>
+                <li>University of Tokyo; Kyoto University; Waseda University (short-term visiting, 2025)</li>
+            </ul>
         </section>
 
-        <section id="competitions" class="container section">
-            <h2>Competition Experience</h2>
-            <div class="competition-item">
-                <h3>Competition Name</h3>
-                <p>Award details...</p>
+        <section id="awards" class="container section">
+            <h2>Awards & Honors</h2>
+            <div class="publications-container">
+                <div class="publication-category">
+                    <h3>Scholarships</h3>
+                    <ul>
+                        <li>2023–2024: National Scholarship (Top 2% in China; sole recipient in my major)</li>
+                        <li>2025–2026: First-Class Scholarship, Southwest University</li>
+                        <li>2022–2023: Third-Class Scholarship, Southwest University</li>
+                    </ul>
+                </div>
+                <div class="publication-category">
+                    <h3>Honors & Competitions</h3>
+                    <ul>
+                        <li>2025: Advanced Individual in Innovation and Entrepreneurship, Chongqing</li>
+                        <li>2024: Outstanding Academic and Technological Achievement Award, Southwest University</li>
+                        <li>2024: Outstanding Innovation and Entrepreneurship Team Leader, Southwest University</li>
+                        <li>2025: China University Computer Design Competition — National First Prize</li>
+                        <li>2024: MCM — Finalist (F-Prize)</li>
+                        <li>2024: National Undergraduate Mathematical Contest in Modeling — Provincial First Prize</li>
+                        <li>2025: “Challenge Cup” — Provincial Special Prize</li>
+                        <li>2024: China Youth “Chuangqingchun” — National Bronze Award</li>
+                    </ul>
+                </div>
             </div>
         </section>
 
         <section id="publications" class="container section">
-            <h2>Publications & Achievements</h2>
-            <div class="publications-container">
-                <div class="publication-category">
-                    <h3>Category Title</h3>
-                    <ul>
-                        <li>Achievement item 1...</li>
-                        <li>Achievement item 2...</li>
-                    </ul>
-                </div>
+            <h2>Publications</h2>
+            <ul class="list">
+                <li>Li X.†, Meng B.†, Zhang Z., Wei L., Chang W., <strong>Wang Y.</strong>, Zhang K.*, Li T.*, Lu K.* (2024). qPrimerDB 2.0: an updated comprehensive gene-specific qPCR primer database for 1172 organisms. <em>Nucleic Acids Research</em>, gkae684. DOI: 10.1093/nar/gkae684. (IF 16.6)</li>
+                <li><strong>Wang Y.</strong>, Peng Y., Zheng X., et al. (2025). Deep Mining and Intelligent Decision-making Method for Agricultural Breeding Big Data. Chinese Patent No. 202410672739A.</li>
+                <li><strong>Wang Y.</strong>, Peng Y., Xu R., Lai A., Gai Y. (2024). Multi-Gene Aggregation and Intelligent Breeding Bioinformatics Prediction Software V1.0. Software Copyright No. 2024SR2095288.</li>
+                <li><strong>Wang Y.</strong>, Li S., Fan X. (2024). Big Data Driven Plant Healthcare System V1.0. Software Copyright No. 2024SR0709216.</li>
+            </ul>
+        </section>
+
+        <section id="projects" class="container section">
+            <h2>Projects</h2>
+            <div class="research-item">
+                <h3>National Undergraduate Innovation Program: Smart Breeding & Omics Big Data Platform (Apr 2024 – May 2025)</h3>
+                <p>Principal investigator. Built and launched BrassicaCTD, a comprehensive comparative transcriptomics database for Brassica species.</p>
+                <ul class="links-inline">
+                    <li><a href="https://brassicaedb.com/#/" target="_blank" rel="noopener">BrassicaCTD</a></li>
+                    <li><a href="https://brassicapgf.com/#/" target="_blank" rel="noopener">PGF Framework</a></li>
+                </ul>
             </div>
         </section>
 
-        <section id="skills" class="container section">
-            <h2>Skills</h2>
-            <div class="skills-container">
-                <div class="skill-category">
-                    <h3>Skill Category</h3>
-                    <ul>
-                        <li>Skill 1...</li>
-                        <li>Skill 2...</li>
-                    </ul>
-                </div>
-            </div>
+        <section id="interests" class="container section">
+            <h2>Interests</h2>
+            <p>I enjoy reading and writing, solving the Rubik's Cube, and running. I am actively improving my mathematics and programming skills.</p>
+            <ul class="list">
+                <li>2021: Second Prize, 23rd National New Concept Writing Competition</li>
+                <li>2020: Informatics Olympiad (NOIP) team member</li>
+                <li>2019: Middle school track and field team (long-distance)</li>
+            </ul>
+        </section>
+
+        <section id="service" class="container section">
+            <h2>Reviewer Service</h2>
+            <p>None at this time.</p>
         </section>
 
         <section id="contact" class="container section">
             <h2>Contact</h2>
             <div class="contact-info">
-                <p>Contact information...</p>
+                <p>Email: <a href="mailto:echooler@gmail.com">echooler@gmail.com</a></p>
+                <p>GitHub: <a href="https://github.com/yuhong2024" target="_blank" rel="noopener">github.com/yuhong2024</a></p>
+                <p>Blog (CN): <a href="https://wangyuhong.cn" target="_blank" rel="noopener">wangyuhong.cn</a> | Blog (EN): <a href="http://echooler.com" target="_blank" rel="noopener">echooler.com</a></p>
             </div>
         </section>
     </main>
 
     <footer>
         <div class="container">
-            <p>&copy; 2024 Personal Website. All rights reserved.</p>
+            <p>&copy; 2025 Yuhong Wang</p>
         </div>
     </footer>
+    <script src="js/main.js"></script>
 </body>
 </html>

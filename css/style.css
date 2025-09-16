@@ -6,7 +6,7 @@
 }
 
 body {
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-family: 'Inter', 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     line-height: 1.6;
     color: #333;
     background-color: #f8f9fa;
@@ -38,6 +38,27 @@ header .container {
 .logo h1 {
     font-size: 1.8rem;
     font-weight: 300;
+}
+
+.skip-link {
+    position: absolute;
+    left: -9999px;
+    top: auto;
+    width: 1px;
+    height: 1px;
+    overflow: hidden;
+}
+
+.skip-link:focus {
+    left: 1rem;
+    top: 1rem;
+    width: auto;
+    height: auto;
+    background: #fff;
+    color: #333;
+    padding: 0.5rem 0.75rem;
+    border-radius: 6px;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.1);
 }
 
 nav ul {
@@ -114,6 +135,43 @@ main {
     color: #666;
     max-width: 600px;
     margin: 0 auto;
+}
+
+.hero {
+    display: flex;
+    align-items: center;
+    gap: 1.25rem;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.avatar {
+    border-radius: 50%;
+    width: 112px;
+    height: 112px;
+    object-fit: cover;
+    box-shadow: 0 6px 16px rgba(0,0,0,0.15);
+}
+
+.links {
+    margin-top: 1rem;
+}
+
+.btn {
+    display: inline-block;
+    background: #667eea;
+    color: #fff;
+    text-decoration: none;
+    padding: 0.5rem 0.9rem;
+    border-radius: 999px;
+    margin: 0.25rem;
+    font-size: 0.95rem;
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.btn:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 6px 16px rgba(102, 126, 234, 0.35);
 }
 
 /* 教育背景部分 */
@@ -199,6 +257,25 @@ main {
     color: #666;
 }
 
+.timeline {
+    list-style: none;
+    max-width: 900px;
+    margin: 0 auto;
+}
+
+.timeline li {
+    padding: 0.5rem 0.25rem;
+    border-left: 3px solid #e2e8f0;
+    padding-left: 0.75rem;
+    margin-left: 0.5rem;
+}
+
+.timeline .date {
+    font-weight: 600;
+    color: #444;
+    margin-right: 0.5rem;
+}
+
 .publication-category li:last-child {
     border-bottom: none;
 }
@@ -236,6 +313,22 @@ main {
     border-bottom: none;
 }
 
+.list {
+    list-style: disc inside;
+    color: #555;
+}
+
+.links-inline {
+    list-style: none;
+    display: flex;
+    gap: 1rem;
+    padding-top: 0.5rem;
+}
+
+.links-inline a {
+    color: #667eea;
+}
+
 /* 联系方式部分 */
 .contact-info {
     text-align: center;
@@ -271,6 +364,10 @@ footer {
     .section {
         padding: 1.5rem;
         margin-bottom: 2rem;
+    }
+
+    .about-text p {
+        font-size: 1.05rem;
     }
     
     .publications-container,
