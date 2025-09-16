@@ -41,6 +41,7 @@ li { margin: 4px 0; }
 a { color: #0055cc; text-decoration: none; }
 a:hover { text-decoration: underline; }
 .advisor-link { font-size: 0.85em; color: #666; font-weight: normal; }
+.advisor-label { font-size: 0.85em; color: #666; font-weight: normal; }
 .site-footer { color: #666; font-size: 14px; padding: 24px 0; border-top: 1px solid #eee; margin-top: 30px; }
 
 /* (no details now) */
