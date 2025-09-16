@@ -9,16 +9,16 @@ body {
     background: #fff;
 }
 
-.container { max-width: 1100px; margin: 0 auto; padding: 0 20px; }
+.container { max-width: 820px; margin: 0 auto; padding: 24px 20px; }
 
 /* Top navigation */
 .topnav { position: sticky; top: 0; background: #fff; border-bottom: 1px solid #eee; z-index: 10; }
-.topnav-inner { display: flex; align-items: center; justify-content: space-between; max-width: 1100px; margin: 0 auto; padding: 12px 20px; }
+.topnav-inner { display: flex; align-items: center; justify-content: space-between; max-width: 820px; margin: 0 auto; padding: 12px 20px; }
 .brand { font-weight: 600; }
 .topnav-links a { color: #333; text-decoration: none; margin-left: 16px; }
 .topnav-links a:hover { text-decoration: underline; }
 
-/* Two-column layout */
+/* Two-column layout (sidebar + content) */
 .page { display: grid; grid-template-columns: 280px 1fr; gap: 28px; max-width: 1100px; margin: 20px auto; padding: 0 20px; }
 .sidebar { position: sticky; top: 68px; align-self: start; }
 .profile { border: 1px solid #eee; border-radius: 8px; padding: 16px; }
@@ -30,18 +30,20 @@ body {
 .links li { margin: 6px 0; }
 .links a { color: #0055cc; text-decoration: none; }
 .links a:hover { text-decoration: underline; }
-
-/* Content */
 .content { max-width: 760px; }
-.content + .content { margin-top: 10px; }
-h2 { font-size: 20px; margin: 18px 0 8px; font-weight: 700; color: #111; }
+
+/* Content spacing */
+h2 { font-size: 18px; margin: 0 0 8px; font-weight: 700; color: #111; }
 p { margin: 8px 0; }
 ul, ol { margin: 8px 0 8px 20px; }
-li { margin: 6px 0; }
+li { margin: 4px 0; }
 .site-footer { color: #666; font-size: 14px; padding: 24px 0; border-top: 1px solid #eee; margin-top: 30px; }
 
+/* (no details now) */
+
 @media (max-width: 900px) {
-    .page { grid-template-columns: 1fr; }
+    .container { padding: 20px 16px; }
+    .page { grid-template-columns: 1fr; padding: 0 16px; }
     .sidebar { position: static; }
 }
 
